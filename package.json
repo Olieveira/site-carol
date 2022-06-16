@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@stitches/react": "^1.2.8",
+    "next": "^12.1.6",
+    "react": "^18.2.0"
+  },
+  "name": "site-carol",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olieveira/site-carol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olieveira/site-carol/issues"
+  },
+  "homepage": "https://github.com/Olieveira/site-carol#readme",
+  "description": ""
+}
