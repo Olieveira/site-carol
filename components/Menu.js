@@ -3,6 +3,7 @@ import { Img } from 'react-image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, NavbarBrand, NavLink, NavbarToggler, Collapse, Nav, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
 import Logo from '../src/logo.png'
+import Image from 'next/image';
 
 
 const Menu = () => {
@@ -12,7 +13,7 @@ const Menu = () => {
             <Navbar color="dark" dark expand="md" fixed="top" style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)`, }}>
                 
                 <NavbarBrand href="/">
-                    <img src={Logo} />
+                    <Image src={Logo} width={'135'} height={'55.11'} layout={'responsive'}  />
                 </NavbarBrand>
 
                 <Collapse navbar style={{flexGrow: 0}}>
