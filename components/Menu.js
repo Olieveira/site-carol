@@ -4,7 +4,7 @@ import { Navbar, Jumbotron, Carousel, NavbarBrand, NavLink, NavbarToggler, Colla
 
 import Image from 'next/image';
 import logo from '.././src/Logo.png';
-import Img from 'react-image';
+
 
 const Menu = () => {
 
@@ -14,7 +14,7 @@ const Menu = () => {
 
     return (
         <div>
-            <Navbar color="dark" dark expand="md" style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)`, marginBottom: 25 }}>
+            <Navbar color="dark" dark expand="md" style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)`}}>
                 <Container fluid>
                     <Row style={{alignItems: 'center'}}>
                         <Col  style={{justifyContent: 'left', alignItems: 'center'}}>
@@ -25,7 +25,6 @@ const Menu = () => {
                                 height={'20px'}
                                 layout={'responsive'}
                                 alt={'Studio Caroline Vitória'}
-                                placeholder={'blur'}
                             />
                             </div>
                         </Col>
@@ -45,13 +44,6 @@ const Menu = () => {
                                     <NavItem className='link-hd'>
                                         <NavLink href="contatos">Contatos</NavLink>
                                     </NavItem>
-
-                                    <style>{`.link-hd={
-                                        color: '#2c2521';
-                                        font-Weight: 'bold';
-                                    }`}
-
-                                    </style>
 
                                 </Nav>
 
