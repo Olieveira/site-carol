@@ -16,12 +16,7 @@ function App() {
                 <title>Studio CV</title>
             </Head>
             <Menu />
-            <div className='bdy'>
-                <style>{`.bdy={
-                    background-image: '.../../src/Logo.png'
-                }`}
-
-                </style>
+            <div style={{minHeight: '100%'}}>
                 <Container>
                     <h1>Just testing</h1>
                 </Container>

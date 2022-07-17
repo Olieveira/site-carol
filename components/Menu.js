@@ -16,33 +16,42 @@ const Menu = () => {
         <div>
             <Navbar color="dark" dark expand="md" style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)`, marginBottom: 25 }}>
                 <Container fluid>
-                    <Row>
-                        <Col style={{maxWidth: 200}} xs sm md>
-                            <Image sm={'100px'} md={'700px'} lg={'1000px'} xl={'500px'}
+                    <Row style={{alignItems: 'center'}}>
+                        <Col  style={{justifyContent: 'left', alignItems: 'center'}}>
+                        <div style={{minWidth: '100px', width: '200px', padding: '10px 0'}}>
+                            <Image
                                 src={logo}
-                                width={'200px'}
-                                height={'100px'}
+                                width={'50px'}
+                                height={'20px'}
+                                layout={'responsive'}
                                 alt={'Studio Caroline Vitória'}
                                 placeholder={'blur'}
-                                sizes={10}
                             />
+                            </div>
                         </Col>
                         <NavbarToggler onClick={toggle} />
-                        <Col xs sm md>
-                            <Collapse isOpen={isOpen} navbar className=''>
-                                <Nav className="mr-auto" navbar>
+                        <Col>
+                            <Collapse  style={{justifyContent: 'right'}} isOpen={isOpen} navbar>
+                                <Nav className="mr-auto" navbar style={{color: '#2c2521', fontWeight: 'bold'}}>
 
-                                    <NavItem className='text-right'>
+                                    <NavItem className='text-right, link-hd'>
                                         <NavLink href="/">Página Inicial</NavLink>
                                     </NavItem>
 
-                                    <NavItem>
+                                    <NavItem className='link-hd'>
                                         <NavLink href="sobre">Sobre</NavLink>
                                     </NavItem>
 
-                                    <NavItem>
+                                    <NavItem className='link-hd'>
                                         <NavLink href="contatos">Contatos</NavLink>
                                     </NavItem>
+
+                                    <style>{`.link-hd={
+                                        color: '#2c2521';
+                                        font-Weight: 'bold';
+                                    }`}
+
+                                    </style>
 
                                 </Nav>
 
