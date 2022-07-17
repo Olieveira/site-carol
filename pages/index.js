@@ -16,7 +16,12 @@ function App() {
                 <title>Studio CV</title>
             </Head>
             <Menu />
-            <div>
+            <div className='bdy'>
+                <style>{`.bdy={
+                    background-image: '.../../src/Logo.png'
+                }`}
+
+                </style>
                 <Container>
                     <h1>Just testing</h1>
                 </Container>
