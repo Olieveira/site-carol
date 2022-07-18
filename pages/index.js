@@ -2,8 +2,9 @@ import React from 'react'
 import Menu from '../components/Menu';
 import Head from 'next/head';
 import Icone from '../public/favicon.ico'
-import { Nav, Container, CarouselItem, CarouselCaption } from 'reactstrap'
+import { Nav, Container, CarouselItem, CarouselCaption, Row, Col } from 'reactstrap'
 import logo from '../src/logo.png'
+import henna from '../src/henna.jpg'
 import { Carousel } from 'react-bootstrap';
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,16 +22,19 @@ function App() {
             </Head>
 
             <Menu />
-            <Container fluid className='justify-content-center align-items-center' style={{ backgroundColor: '#000000', minHeight: '500px', paddingTop: '20px' }}>
-                <Carousel className='p-5'>
-                    <Carousel.Item>
+            
+            <Container fluid style={{ backgroundImage: `url(${henna})`}} className=' p-5 d-flex justify-content-around align-items-center'>
+                <Carousel className='w-50 d-flex align-items-center'>
+
+                    <Carousel.Item >
                         <Image
                             src={logo}
                             width={'250px'}
                             height={'100px'}
+
                         />
                         <Carousel.Caption>
-                            <h3>Micropigmentação</h3>
+                            <h3 style={{ margin: '10px auto 0 auto' }}>Micropigmentação</h3>
                             <p>bla bla bla bla bla...</p>
                         </Carousel.Caption>
                     </Carousel.Item>
