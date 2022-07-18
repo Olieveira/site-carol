@@ -10,7 +10,6 @@ import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
 function App() {
     return (
         <div>
@@ -22,19 +21,18 @@ function App() {
             </Head>
 
             <Menu />
-            
-            <Container fluid style={{ backgroundImage: `url(${henna})`}} className=' p-5 d-flex justify-content-around align-items-center'>
-                <Carousel className='w-50 d-flex align-items-center'>
 
+            <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px' }} className='p-5 d-flex justify-content-around align-items-center px-4'>
+                <Carousel className='px-4 w-50 d-flex align-items-center'>
                     <Carousel.Item >
-                        <Image
-                            src={logo}
-                            width={'250px'}
-                            height={'100px'}
+                        <Image className='w-100'
+                            src={henna}
+                            width={'100%'}
+                            height={'100%'}
 
                         />
                         <Carousel.Caption>
-                            <h3 style={{ margin: '10px auto 0 auto' }}>Micropigmentação</h3>
+                            <h3 className='my-0'>Micropigmentação</h3>
                             <p>bla bla bla bla bla...</p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -47,7 +45,7 @@ function App() {
 
                         />
                         <Carousel.Caption>
-                            <h3>Henna</h3>
+                            <h3 className='my-0'>Henna</h3>
                             <p>bla bla bla bla bla...</p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -59,7 +57,7 @@ function App() {
                             height={'100px'}
                         />
                         <Carousel.Caption>
-                            <h3>Fio a Fio</h3>
+                            <h3 className='my-0'>Fio a Fio</h3>
                             <p>bla bla bla bla bla...</p>
                         </Carousel.Caption>
                     </Carousel.Item>
