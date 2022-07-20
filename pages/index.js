@@ -8,6 +8,7 @@ import henna from '../src/henna.jpg'
 import { Carousel } from 'react-bootstrap';
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/style/index.css'
 
 
 function App() {
@@ -22,26 +23,28 @@ function App() {
 
             <Menu />
 
-            <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px' }} className='p-5 d-flex justify-content-around align-items-center px-4'>
-                <Carousel className='px-4 w-50 align-content-center'>
-                    <Carousel.Item classname='d-flex align-items-center flex-column '>
-                        <Image style={{position: 'relative'}} className='align-self-baseline w-100'
-                            src={henna}
-                            width={'100%'}
-                            height={'100%'}
+            <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px' }} className='d-flex align-content-center justify-content-center align-items-center'>
+                <Carousel>
+                    <Carousel.Item>
+                        <div className='d-flex justify-content-center align-items-center' style={{ minWidth: '1000px', minHeight: '800px',backgroundImage: `linear-gradient(to right, rgba(170,170,200,0.4), #584c99)` }}>
+                            <Image
+                                src={henna}
+                                width={'100%'}
+                                height={'100%'}
 
-                        />
-                        <Carousel.Caption>
-                            <h3 className='my-0'>Micropigmentação</h3>
-                            <p>bla bla bla bla bla...</p>
-                        </Carousel.Caption>
+                            />
+                            <Carousel.Caption >
+                                <h3>Micropigmentação</h3>
+                                <p>bla bla bla bla bla...</p>
+                            </Carousel.Caption>
+                        </div>
                     </Carousel.Item>
 
                     <Carousel.Item>
                         <Image
                             src={logo}
-                            width={'250px'}
-                            height={'100px'}
+                            width={'350px'}
+                            height={'200px'}
 
                         />
                         <Carousel.Caption>
