@@ -26,9 +26,9 @@ function App() {
             <Menu />
 
             <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px', minWidth: '100%' }} className='d-flex align-content-center justify-content-center align-items-center'>
-                <Carousel>
+                <Carousel className='px-5'>
                     <Carousel.Item>
-                        <div className='d-flex justify-content-center align-items-center' style={{ minWidth: '100%', minHeight: '500px' }}>
+                        <div className='d-flex justify-content-around align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
                             <Image style={{ cursor: 'pointer' }}
                                 src={henna}
                                 width={'293px'}
@@ -42,32 +42,29 @@ function App() {
                     </Carousel.Item>
 
                     <Carousel.Item>
-                        <div className='d-flex flex-column justify-content-center align-items-center'>
-                            <div style={{ minWidth: '100%', minHeight: '500px'}} className='flex-grow-1 py-5'>
-                                <Image style={{ cursor: 'pointer' }}
-                                    src={microLabial}
-                                    width={'293px'}
-                                    height={'293px'}
-
-                                />
-                            </div>
-                            <div>
-                                <Carousel.Caption>
-                                    <h3 className='my-0'>Micropigmentação Labial</h3>
-                                </Carousel.Caption>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                        <div className='d-flex justify-content-center align-items-center' style={{ minWidth: '100%', minHeight: '500px' }}>
+                        <div className='d-flex justify-content-around align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
                             <Image style={{ cursor: 'pointer' }}
                                 src={alongamento}
                                 width={'293px'}
                                 height={'293px'}
+
                             />
-                            <Carousel.Caption>
-                                <h3 className='my-0'>alongamento de unha</h3>
+                            <Carousel.Caption >
+                                <h3>alongamento de Unha</h3>
+                            </Carousel.Caption>
+                        </div>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <div className='d-flex justify-content-center align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
+                            <Image style={{ cursor: 'pointer' }}
+                                src={microLabial}
+                                width={'293px'}
+                                height={'293px'}
+
+                            />
+                            <Carousel.Caption >
+                                <h3>Micropigmentação Labial</h3>
                             </Carousel.Caption>
                         </div>
                     </Carousel.Item>

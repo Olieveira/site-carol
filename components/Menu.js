@@ -13,12 +13,12 @@ const Menu = () => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div style={{minWidth: '100%'}}>
-            <Navbar color="dark" dark expand="md" style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)`}}>
+        <div style={{ minWidth: '100%' }}>
+            <Navbar color="dark" dark expand="sm" className='flex-wrap flex-row' style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)` }}>
                 <Container fluid>
-                    <Row style={{alignItems: 'center'}}>
-                        <Col  style={{justifyContent: 'left', alignItems: 'center'}}>
-                        <div style={{minWidth: '100px', width: '200px', padding: '10px 0'}}>
+                    <div className='d-flex flex-row justify-content-center align-items-center'>
+
+                        <div className='' style={{ minWidth: '100px', width: '200px', padding: '10px 0' }}>
                             <Image
                                 src={logo}
                                 width={'50px'}
@@ -26,34 +26,35 @@ const Menu = () => {
                                 layout={'responsive'}
                                 alt={'Studio Caroline Vitória'}
                             />
-                            </div>
-                        </Col>
+                        </div>
+
                         <NavbarToggler onClick={toggle} />
-                        <Col>
-                            <Collapse  style={{justifyContent: 'right'}} isOpen={isOpen} navbar>
-                                <Nav className="mr-auto" navbar style={{color: '#2c2521', fontWeight: 'bold'}}>
 
-                                    <NavItem className='text-right, link-hd'>
-                                        <NavLink href="/">Página Inicial</NavLink>
-                                    </NavItem>
+                        <Collapse style={{ justifyContent: 'right' }} isOpen={isOpen} navbar>
+                            <Nav className="mr-auto " navbar style={{ color: '#2c2521', fontWeight: 'bold' }}>
 
-                                    <NavItem className='link-hd'>
-                                        <NavLink href="sobre">Sobre</NavLink>
-                                    </NavItem>
+                                <NavItem className='text-right, link-hd'>
+                                    <NavLink href="/">Página Inicial</NavLink>
+                                </NavItem>
 
-                                    <NavItem className='link-hd'>
-                                        <NavLink href="contatos">Contatos</NavLink>
-                                    </NavItem>
+                                <NavItem className='link-hd'>
+                                    <NavLink href="sobre">Sobre</NavLink>
+                                </NavItem>
 
-                                </Nav>
+                                <NavItem className='link-hd'>
+                                    <NavLink href="contatos">Contatos</NavLink>
+                                </NavItem>
 
-                            </Collapse>
-                        </Col>
-                    </Row>
+                            </Nav>
+
+                        </Collapse>
+
+                    </div>
                 </Container>
 
             </Navbar>
-        </div >
+        </div>
+
     );
 }
 
