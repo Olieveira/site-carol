@@ -23,9 +23,9 @@ function App() {
             <Menu />
 
             <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px' }} className='p-5 d-flex justify-content-around align-items-center px-4'>
-                <Carousel className='px-4 w-50 d-flex align-items-center'>
-                    <Carousel.Item >
-                        <Image className='w-100'
+                <Carousel className='px-4 w-50 align-content-center'>
+                    <Carousel.Item classname='d-flex align-items-center flex-column '>
+                        <Image style={{position: 'relative'}} className='align-self-baseline w-100'
                             src={henna}
                             width={'100%'}
                             height={'100%'}
