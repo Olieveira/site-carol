@@ -13,7 +13,7 @@ const Menu = () => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div>
+        <div style={{minWidth: '100%'}}>
             <Navbar color="dark" dark expand="md" style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)`}}>
                 <Container fluid>
                     <Row style={{alignItems: 'center'}}>

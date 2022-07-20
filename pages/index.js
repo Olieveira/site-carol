@@ -5,10 +5,12 @@ import Icone from '../public/favicon.ico'
 import { Nav, Container, CarouselItem, CarouselCaption, Row, Col } from 'reactstrap'
 import logo from '../src/logo.png'
 import henna from '../src/henna.jpg'
+import microLabial from '../src/micropigmentacao-labial.jpg'
+import alongamento from '../src/alongamento.jpg'
 import { Carousel } from 'react-bootstrap';
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../src/style/index.css'
+
 
 
 function App() {
@@ -23,46 +25,51 @@ function App() {
 
             <Menu />
 
-            <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px' }} className='d-flex align-content-center justify-content-center align-items-center'>
+            <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px', minWidth: '100%' }} className='d-flex align-content-center justify-content-center align-items-center'>
                 <Carousel>
                     <Carousel.Item>
-                        <div className='d-flex justify-content-center align-items-center' style={{ minWidth: '1000px', minHeight: '800px',backgroundImage: `linear-gradient(to right, rgba(170,170,200,0.4), #584c99)` }}>
-                            <Image
+                        <div className='d-flex justify-content-center align-items-center' style={{ minWidth: '100%', minHeight: '500px' }}>
+                            <Image style={{ cursor: 'pointer' }}
                                 src={henna}
-                                width={'100%'}
-                                height={'100%'}
+                                width={'293px'}
+                                height={'293px'}
 
                             />
                             <Carousel.Caption >
-                                <h3>Micropigmentação</h3>
-                                <p>bla bla bla bla bla...</p>
+                                <h3>Henna</h3>
                             </Carousel.Caption>
                         </div>
                     </Carousel.Item>
 
                     <Carousel.Item>
-                        <Image
-                            src={logo}
-                            width={'350px'}
-                            height={'200px'}
+                        <div className='d-flex flex-column justify-content-center align-items-center'>
+                            <div style={{ minWidth: '100%', minHeight: '500px'}} className='flex-grow-1 py-5'>
+                                <Image style={{ cursor: 'pointer' }}
+                                    src={microLabial}
+                                    width={'293px'}
+                                    height={'293px'}
 
-                        />
-                        <Carousel.Caption>
-                            <h3 className='my-0'>Henna</h3>
-                            <p>bla bla bla bla bla...</p>
-                        </Carousel.Caption>
+                                />
+                            </div>
+                            <div>
+                                <Carousel.Caption>
+                                    <h3 className='my-0'>Micropigmentação Labial</h3>
+                                </Carousel.Caption>
+                            </div>
+                        </div>
                     </Carousel.Item>
 
                     <Carousel.Item>
-                        <Image
-                            src={logo}
-                            width={'250px'}
-                            height={'100px'}
-                        />
-                        <Carousel.Caption>
-                            <h3 className='my-0'>Fio a Fio</h3>
-                            <p>bla bla bla bla bla...</p>
-                        </Carousel.Caption>
+                        <div className='d-flex justify-content-center align-items-center' style={{ minWidth: '100%', minHeight: '500px' }}>
+                            <Image style={{ cursor: 'pointer' }}
+                                src={alongamento}
+                                width={'293px'}
+                                height={'293px'}
+                            />
+                            <Carousel.Caption>
+                                <h3 className='my-0'>alongamento de unha</h3>
+                            </Carousel.Caption>
+                        </div>
                     </Carousel.Item>
                 </Carousel>
             </Container>
