@@ -16,9 +16,9 @@ const Menu = () => {
         <div style={{ minWidth: '100%' }}>
             <Navbar color="dark" dark expand="sm" className='flex-wrap flex-row' style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)` }}>
                 <Container fluid>
-                    <div className='d-flex flex-row justify-content-center align-items-center'>
+                    <div className='d-flex flex-row justify-content-between align-items-center'>
 
-                        <div className='' style={{ minWidth: '100px', width: '200px', padding: '10px 0' }}>
+                        <div className='align-self-start' style={{ left: '0px',minWidth: '100px', width: '200px', padding: '10px 0' }}>
                             <Image
                                 src={logo}
                                 width={'50px'}
@@ -28,26 +28,26 @@ const Menu = () => {
                             />
                         </div>
 
-                        <NavbarToggler onClick={toggle} />
 
-                        <Collapse style={{ justifyContent: 'right' }} isOpen={isOpen} navbar>
-                            <Nav className="mr-auto " navbar style={{ color: '#2c2521', fontWeight: 'bold' }}>
 
-                                <NavItem className='text-right, link-hd'>
-                                    <NavLink href="/">Página Inicial</NavLink>
-                                </NavItem>
 
-                                <NavItem className='link-hd'>
-                                    <NavLink href="sobre">Sobre</NavLink>
-                                </NavItem>
+                        <Nav className="mr-auto px-4 " navbar style={{ color: '#2c2521', fontWeight: 'bold' }}>
 
-                                <NavItem className='link-hd'>
-                                    <NavLink href="contatos">Contatos</NavLink>
-                                </NavItem>
+                            <NavItem className='text-right, link-hd'>
+                                <NavLink href="/">Página Inicial</NavLink>
+                            </NavItem>
 
-                            </Nav>
+                            <NavItem className='link-hd'>
+                                <NavLink href="sobre">Sobre</NavLink>
+                            </NavItem>
 
-                        </Collapse>
+                            <NavItem className='link-hd'>
+                                <NavLink href="contatos">Contatos</NavLink>
+                            </NavItem>
+
+                        </Nav>
+
+
 
                     </div>
                 </Container>

@@ -27,23 +27,23 @@ function App() {
 
             <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px', minWidth: '100%' }} className='d-flex align-content-center justify-content-center align-items-center'>
                 <Carousel className='px-5'>
-                    <Carousel.Item>
+                    <Carousel.Item className='px-5'>
                         <div className='d-flex justify-content-around align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
-                            <Image style={{ cursor: 'pointer' }}
+                            <Image style={{ cursor: 'pointer', borderTopRightRadius: '30px', borderBottomLeftRadius: '30px', WebkitBorderTopRightRadius: '30px', WebkitBorderBottomLeftRadius: '30px' }}
                                 src={henna}
                                 width={'293px'}
                                 height={'293px'}
 
                             />
-                            <Carousel.Caption >
+                            <Carousel.Caption>
                                 <h3>Henna</h3>
                             </Carousel.Caption>
                         </div>
                     </Carousel.Item>
 
-                    <Carousel.Item>
+                    <Carousel.Item className='px-5'>
                         <div className='d-flex justify-content-around align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
-                            <Image style={{ cursor: 'pointer' }}
+                            <Image style={{ cursor: 'pointer', borderTopRightRadius: '30px', borderBottomLeftRadius: '30px', WebkitBorderTopRightRadius: '30px', WebkitBorderBottomLeftRadius: '30px' }}
                                 src={alongamento}
                                 width={'293px'}
                                 height={'293px'}
@@ -55,9 +55,9 @@ function App() {
                         </div>
                     </Carousel.Item>
 
-                    <Carousel.Item>
+                    <Carousel.Item className='px-5'>
                         <div className='d-flex justify-content-center align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
-                            <Image style={{ cursor: 'pointer' }}
+                            <Image style={{ cursor: 'pointer', borderTopRightRadius: '30px', borderBottomLeftRadius: '30px', WebkitBorderTopRightRadius: '30px', WebkitBorderBottomLeftRadius: '30px' }}
                                 src={microLabial}
                                 width={'293px'}
                                 height={'293px'}
