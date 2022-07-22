@@ -70,6 +70,42 @@ function App() {
                     </Carousel.Item>
                 </Carousel>
             </Container>
+            <div className='w-100 h-100' style={{ backgroundImage: `radial-Gradient(#d5bfbf, #877b7b)` }}>
+                <div className='d-flex flex-wrap justify-content-around align-items-center px-5'>
+                    <div className='d-flex flex-column align-items-center justify-content-center'>
+                        <div className='my-3 p-3' style={{ backgroundColor: `rgba(73,193,105,0.5)`, borderRadius: '50%' }}>
+                            <Image
+                                src={logo}
+                                width={'171px'}
+                                height={'120px'}
+                            />
+                        </div>
+                        <h3>WhatsApp</h3>
+                    </div>
+                    <div className='d-flex flex-column align-items-center justify-content-center'>
+                        <div className='my-3 p-3' style={{ backgroundColor: `rgba(73,193,105,0.5)`, borderRadius: '50%' }}>
+                            <Image
+                                src={logo}
+                                width={'171px'}
+                                height={'120px'}
+                            />
+                        </div>
+                        <h3>WhatsApp</h3>
+                    </div>
+                    <div className='d-flex flex-column align-items-center justify-content-center'>
+                        <div className='my-3 p-3' style={{ backgroundColor: `rgba(73,193,105,0.5)`, borderRadius: '50%' }}>
+                            <Image
+                                src={logo}
+                                width={'171px'}
+                                height={'120px'}
+                            />
+                        </div>
+                        <h3>WhatsApp</h3>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     )
 };
