@@ -28,10 +28,7 @@ const Menu = () => {
                             />
                         </div>
 
-
-
-
-                        <Nav className="mr-auto px-4 " navbar style={{ color: '#2c2521', fontWeight: 'bold' }}>
+                        <Nav className="mr-auto px-4 " navbar style={{ textAlign: 'center', color: '#2c2521', fontWeight: 'bold', fontSize: '1.1rem' }}>
 
                             <NavItem className='text-right, link-hd'>
                                 <NavLink href="/">Página Inicial</NavLink>

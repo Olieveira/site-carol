@@ -1,15 +1,18 @@
 import React from 'react'
 import Menu from '../components/Menu';
+import Slider from '../components/Slider'
 import Head from 'next/head';
+import Social from '../components/Social';
 import Icone from '../public/favicon.ico'
-import { Nav, Container, CarouselItem, CarouselCaption, Row, Col } from 'reactstrap'
+
 import logo from '../src/logo.png'
-import henna from '../src/henna.jpg'
-import microLabial from '../src/micropigmentacao-labial.jpg'
-import alongamento from '../src/alongamento.jpg'
-import { Carousel } from 'react-bootstrap';
+
+
+
+
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -25,87 +28,12 @@ function App() {
 
             <Menu />
 
-            <Container fluid style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px', minWidth: '100%' }} className='d-flex align-content-center justify-content-center align-items-center'>
-                <Carousel className='px-5'>
-                    <Carousel.Item className='px-5'>
-                        <div className='d-flex justify-content-around align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
-                            <Image style={{ cursor: 'pointer', borderTopRightRadius: '30px', borderBottomLeftRadius: '30px', WebkitBorderTopRightRadius: '30px', WebkitBorderBottomLeftRadius: '30px' }}
-                                src={henna}
-                                width={'293px'}
-                                height={'293px'}
+            <Slider />
 
-                            />
-                            <Carousel.Caption>
-                                <h3>Henna</h3>
-                            </Carousel.Caption>
-                        </div>
-                    </Carousel.Item>
+            <Social />
 
-                    <Carousel.Item className='px-5'>
-                        <div className='d-flex justify-content-around align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
-                            <Image style={{ cursor: 'pointer', borderTopRightRadius: '30px', borderBottomLeftRadius: '30px', WebkitBorderTopRightRadius: '30px', WebkitBorderBottomLeftRadius: '30px' }}
-                                src={alongamento}
-                                width={'293px'}
-                                height={'293px'}
+            <footer style={{backgroundColor: 'black', color: 'gray'}} className='w-100 d-flex p-2'>© CopyRight Studio Caroline Vitoria</footer>
 
-                            />
-                            <Carousel.Caption >
-                                <h3>alongamento de Unha</h3>
-                            </Carousel.Caption>
-                        </div>
-                    </Carousel.Item>
-
-                    <Carousel.Item className='px-5'>
-                        <div className='d-flex justify-content-center align-items-center m-3' style={{ minWidth: '100%', minHeight: '500px' }}>
-                            <Image style={{ cursor: 'pointer', borderTopRightRadius: '30px', borderBottomLeftRadius: '30px', WebkitBorderTopRightRadius: '30px', WebkitBorderBottomLeftRadius: '30px' }}
-                                src={microLabial}
-                                width={'293px'}
-                                height={'293px'}
-
-                            />
-                            <Carousel.Caption >
-                                <h3>Micropigmentação Labial</h3>
-                            </Carousel.Caption>
-                        </div>
-                    </Carousel.Item>
-                </Carousel>
-            </Container>
-            <div className='w-100 h-100' style={{ backgroundImage: `radial-Gradient(#d5bfbf, #877b7b)` }}>
-                <div className='d-flex flex-wrap justify-content-around align-items-center px-5'>
-                    <div className='d-flex flex-column align-items-center justify-content-center'>
-                        <div className='my-3 p-3' style={{ backgroundColor: `rgba(73,193,105,0.5)`, borderRadius: '50%' }}>
-                            <Image
-                                src={logo}
-                                width={'171px'}
-                                height={'120px'}
-                            />
-                        </div>
-                        <h3>WhatsApp</h3>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center'>
-                        <div className='my-3 p-3' style={{ backgroundColor: `rgba(73,193,105,0.5)`, borderRadius: '50%' }}>
-                            <Image
-                                src={logo}
-                                width={'171px'}
-                                height={'120px'}
-                            />
-                        </div>
-                        <h3>WhatsApp</h3>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center'>
-                        <div className='my-3 p-3' style={{ backgroundColor: `rgba(73,193,105,0.5)`, borderRadius: '50%' }}>
-                            <Image
-                                src={logo}
-                                width={'171px'}
-                                height={'120px'}
-                            />
-                        </div>
-                        <h3>WhatsApp</h3>
-                    </div>
-
-                </div>
-
-            </div>
         </div>
     )
 };
