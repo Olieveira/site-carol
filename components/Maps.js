@@ -3,9 +3,9 @@ import Image from 'next/image';
 import maps from '../src/map.png'
 import notifications from '../src/notifications.png'
 
-const Maps = ({showForm, codigo}) => {
+const Maps = () => {
     return (
-        <div style={{backgroundImage: `linear-gradient(to bottom, #292323, #1f1b1b, #1f1b1b, #1f1b1b)`, color: 'white'}} className='d-flex flex-row justify-content-center align-items-center flex-wrap'>
+        <div style={{ backgroundImage: `linear-gradient(to bottom, #292323, #1f1b1b, #1f1b1b, #1f1b1b)`, color: 'white' }} className='d-flex flex-row justify-content-center align-items-center flex-wrap'>
             <div className='d-flex flex-column justify-content-center align-items-center my-5'>
                 <Image
                     src={maps}
@@ -37,7 +37,7 @@ const Maps = ({showForm, codigo}) => {
                     <p className='px-5'>Cadastre seu email e receba nossas ofertas em primeira mão!!!</p>
                 </div>
                 <div>
-                    <Button> Cadastro </Button>
+                    <Button onClick={function alert(){window.scrollTo(scrollTo,10000)}}> Cadastro </Button>
                 </div>
             </div>
 
