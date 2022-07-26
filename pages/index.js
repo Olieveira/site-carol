@@ -4,6 +4,7 @@ import Slider from '../components/Slider'
 import Head from 'next/head';
 import Social from '../components/Social';
 import Maps from '../components/Maps';
+import NotificationsForm from '../components/NotificationsForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -24,7 +25,9 @@ function App() {
 
             <Maps />
 
-            <footer style={{backgroundColor: 'black', color: 'gray'}} className='w-100 d-flex p-2'>© CopyRight Studio Caroline Vitoria</footer>
+            <NotificationsForm />
+
+            <footer id='foot' style={{backgroundColor: 'black', color: 'gray'}} className='w-100 d-flex p-2'>© CopyRight Studio Caroline Vitoria</footer>
 
         </div>
     )

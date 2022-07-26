@@ -13,8 +13,8 @@ const Menu = () => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div style={{ minWidth: '100%' }}>
-            <Navbar color="dark" dark expand="sm" className='flex-wrap flex-row' style={{ backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)` }}>
+        <div style={{ minWidth: '100%'}}>
+            <Navbar color="dark" dark expand="sm" className='flex-wrap flex-row' style={{boxShadow: '0px 1px 30px rgba(41, 35, 35, 0.8)', backgroundImage: `linear-gradient(to right, #1d1a1a, #957653)` }}>
                 <Container fluid>
                     <div className='d-flex flex-row justify-content-between align-items-center'>
 

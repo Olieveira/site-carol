@@ -11,7 +11,7 @@ import Image from 'next/image';
 const Slider = () => {
     return (
         <div>
-            <Container style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '500px', minWidth: '100%' }} className='d-flex align-content-center justify-content-center align-items-center'>
+            <Container style={{ backgroundImage: `linear-gradient(to right, #bb5555, #584c99)`, minHeight: '800px', minWidth: '100%' }} className='d-flex align-content-center justify-content-center align-items-center'>
                 <Carousel className='px-5 w-100'>
                     <Carousel.Item className='px-5'>
                         <div className='d-flex justify-content-around align-items-center' style={{ minWidth: '100%', minHeight: '500px' }}>
@@ -19,8 +19,6 @@ const Slider = () => {
                                 src={henna}
                                 width={'293px'}
                                 height={'293px'}
-
-
                             />
 
                             <Carousel.Caption>
